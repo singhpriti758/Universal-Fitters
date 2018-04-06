@@ -1,0 +1,59 @@
+th , td
+{
+	padding:10px;
+	text-align: left;
+}
+#navClass
+{
+    margin-left:100px;
+    
+    width:1200px;
+}
+.button
+{
+    border-style:none;
+    background-color:white;
+    color:maroon;
+    font-weight:bold;
+    width:200px;
+    display:block;
+    float:left;
+    text-decoration:none;
+    padding:10px;
+    font-size:15px;
+}
+.button:hover
+{
+    background-color:#E77866 !important;;
+}
+#productsMenu , #ideasMenu , #learnMenu , #installationMenu ,#supportMenu
+{
+    margin-left:100px;
+    border-top: 4px solid #DE4D36;
+    background-color: #F2F4F2;
+    width:1200px;
+    font-family:sans-serif;
+
+}
+.navHr
+{
+    margin-left:100px;
+    width:1200px;
+}
+.menuLinks
+{
+    text-decoration:none !important;
+    color: Black;
+}
+.contentDiv
+{
+    margin-left:100px !important;
+    width:1200px;
+}
+#dropdown
+{
+    color:white;
+    font-weight:bold;
+    padding:6px;
+    border-style:none;
+}

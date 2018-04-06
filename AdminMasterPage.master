@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="JQuery%20Libraries/jquery.min.js"></script>
+    <link href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css" rel="stylesheet" media="screen" />
+    <script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+    <link href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css" rel="stylesheet" />
+   
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+       <br />
+        <div class="row" style="margin-left: 50px">
+            <div>
+                <asp:Image ID="imgLogo" ImageUrl="~/Extras/logo.PNG" runat="server" />
+            </div>
+            <div>
+                <div>
+                    <asp:Label ID="lblName" CssClass="text-info" Font-Size="60px" Style="margin-left: 200px" runat="server" Text="Universal Fitters"></asp:Label>
+                </div>
+                <div>
+                    <asp:Label ID="Label1" Style="margin-left: 300px" runat="server" Text="Universal Fitters Technical Services LLC"></asp:Label>
+                </div>
+            </div>
+        </div>
+            <ul class="nav nav-pills nav-justified" style="margin-left:50px;width:1200px">
+                
+                <li class="dropdown nav-item bgcolor" style="background-color:#DC1414;">
+                    <a class="dropdown-toggle" data-toggle="dropdown" style="color:white" href="#">Flooring</a>
+                    <div class="row dropdown-menu" style="width:300px;">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <asp:LinkButton ID="LinkButton8" runat="server" PostBackUrl="~/AddFlooring.aspx" CssClass="menuLinks">Add Flooring</asp:LinkButton></li>
+                            <li class="list-group-item">
+                                <asp:LinkButton ID="LinkButton34" runat="server" PostBackUrl="~/UpdateFlooring.aspx" CssClass="menuLinks">Update Flooring</asp:LinkButton></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown nav-item" style="background-color:#DC1414;">
+                    <a class="dropdown-toggle" data-toggle="dropdown" style="color:white" href="#">Products</a>
+                    <div class="row dropdown-menu" style="width:300px">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <asp:LinkButton ID="LinkButton56" runat="server" PostBackUrl="~/AddProduct.aspx" CssClass="menuLinks">Add Product</asp:LinkButton></li>
+                            <li class="list-group-item">
+                                <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/UpdateProduct.aspx" CssClass="menuLinks">Update Product</asp:LinkButton></li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="dropdown nav-item" style="background-color:#DC1414;">
+                    <asp:LinkButton ID="LinkButton2" style="color:white" runat="server" PostBackUrl="~/ProductDetails.aspx" CssClass="menuLinks">Product Details</asp:LinkButton>
+                </li>
+                <li class="dropdown nav-item" style="background-color:#50DF87;">
+                    <asp:LinkButton ID="LinkButton3" style="color:white" runat="server" OnClick="logout" CssClass="menuLinks">Logout</asp:LinkButton>
+                </li>
+                </ul>
+
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
